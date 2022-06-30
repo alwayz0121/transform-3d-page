@@ -1,0 +1,70 @@
+.container {
+  width: 100vw;
+  height: 100vh;
+  perspective: 1300px;
+}
+.container > video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: fixed;
+  opacity: 0.5;
+}
+
+/*돌아가는 화면*/
+.container-circle {
+  width: 600px;
+  height: 800px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -400px;
+  margin-left: -300px;
+  transform-style: preserve-3d;
+  animation: rotate linear 30s infinite;
+}
+.container-circle article {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  /* display: none; 각각 작업할 때는 필요한 요소만 block 처리*/
+  backface-visibility: hidden;
+}
+.container-circle article h1 {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  font-size: 30px;
+  opacity: 0;
+  transition: all 0.5s;
+}
+.container-circle article:hover h1 {
+  top: -60px; /*article hover시 제목이 위로 서서히 나타남*/
+  opacity: 1;
+}
+.container-circle .circle-inner {
+  width: 100%;
+  height: 100%;
+}
+
+.container-circle .circle-inner > div {
+  width: 100%;
+  height: 100%;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  box-sizing: border-box;
+  background: rgba(255, 255, 255, 0.06);
+  padding: 50px;
+  position: relative;
+  opacity: 0.7;
+  overflow: hidden;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+.container-circle .circle-inner > div:hover {
+  background: rgba(255, 255, 255, 0.15);
+  transform: scale(1.03);
+  opacity: 1;
+}

@@ -1,0 +1,30 @@
+/* face1 */
+/* .container-circle .circle-face1 {
+  display: block;
+} */
+
+/*궁금한 점 : .container-circle을 쓰지 않고, .circle-face1만 display:block 하면 적용이 안 되는 이유*/
+
+.circle-face1 .circle-inner .circle-inner-box {
+  width: 290px;
+  height: 254px;
+  float: left;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.circle-face1 .circle-inner-box p i {
+  font-size: 100px;
+  transition: all 0.5s;
+  opacity: 0.7;
+}
+
+.circle-face1 .circle-inner-box h2 {
+  margin-top: 20px;
+  letter-spacing: 2px;
+  transition: all 0.5s;
+}
+
+.circle-face1 .circle-inner-box:nth-of-type(odd) {
+  margin-right: 20px;
+}

@@ -1,0 +1,41 @@
+/* face6*/
+/* .container-circle .circle-face6 {
+  display: block;
+} */
+
+.circle-face6 .circle-inner .circle-inner-box {
+  width: 100%;
+  height: 185px;
+  margin-bottom: 20px;
+}
+
+.circle-face6 .circle-inner-box i {
+  width: 22%;
+  height: 100%;
+  border-right: 1px solid #bbb;
+  float: left;
+  font-size: 50px;
+  color: #fff;
+  position: relative;
+  text-align: left;
+  line-height: 90px;
+  box-sizing: border-box;
+  padding-left: 15px;
+}
+
+.circle-face6 .circle-inner-box .info {
+  width: 75%;
+  height: 100%;
+  box-sizing: border-box;
+  padding-left: 40px;
+  float: right;
+}
+
+.circle-face6 .circle-inner-box .info h2 {
+  padding-bottom: 5px;
+}
+
+.circle-face6 .circle-inner-box .info p {
+  font: 18px/1 "arial";
+  color: #999;
+}
