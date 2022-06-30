@@ -1,0 +1,40 @@
+/*3D 배치*/
+.container-circle .circle-face1 {
+  transform: rotateY(0deg) translateZ(-764px);
+}
+.container-circle .circle-face2 {
+  transform: rotateY(45deg) translateZ(-764px);
+}
+.container-circle .circle-face3 {
+  transform: rotateY(90deg) translateZ(-764px);
+}
+.container-circle .circle-face4 {
+  transform: rotateY(135deg) translateZ(-764px);
+}
+.container-circle .circle-face5 {
+  transform: rotateY(180deg) translateZ(-764px);
+}
+.container-circle .circle-face6 {
+  transform: rotateY(225deg) translateZ(-764px);
+}
+.container-circle .circle-face7 {
+  transform: rotateY(270deg) translateZ(-764px);
+}
+.container-circle .circle-face8 {
+  transform: rotateY(315deg) translateZ(-764px);
+}
+
+/*박스를 Z축으로 보내서 원통 모양 만들기
+ - 현재 각 article 너비 : 600px
+ - 원의 둘레 = 600px * 8 (8면) = 2 * PI * 원 반지름
+ -> 따라서, 원 반지름 = 약 764px 
+*/
+
+@keyframes rotate {
+  0% {
+    transform: rotateY(0deg);
+  }
+  100% {
+    transform: rotateY(360deg);
+  }
+}

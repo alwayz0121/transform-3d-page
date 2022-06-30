@@ -1,0 +1,11 @@
+.circle-inner-box:hover i {
+  color: lightcyan;
+  text-shadow: 0px 0px 10px aqua;
+  transform: scale(1.2);
+  opacity: 1;
+}
+
+.circle-inner-box:hover h2 {
+  color: lightcyan;
+  text-shadow: 0px 0px 10px aqua;
+}
