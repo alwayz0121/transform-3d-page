@@ -3,8 +3,6 @@
   display: block;
 } */
 
-/*궁금한 점 : .container-circle을 쓰지 않고, .circle-face1만 display:block 하면 적용이 안 되는 이유*/
-
 .circle-face1 .circle-inner .circle-inner-box {
   width: 290px;
   height: 254px;
